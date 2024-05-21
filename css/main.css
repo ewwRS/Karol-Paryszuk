@@ -1,0 +1,580 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero-img {
+  position: relative;
+  height: 850px;
+  background-image: url(../img/home_1920.jpg);
+  background-size: cover;
+  background-position: 0 75%;
+  z-index: 0;
+}
+
+.hero-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+section {
+  padding: 2.5rem 0;
+}
+section h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #FFCA80;
+}
+
+h3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+p span {
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #014029;
+}
+
+.subpage {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #014029;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.subpage a {
+  font-size: 1.8em;
+  text-decoration: none;
+  color: white;
+}
+.subpage:hover {
+  background-color: #02734A;
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 10;
+}
+nav .navbar-brand {
+  font-size: 2.5rem;
+}
+nav .navbar-nav {
+  font-size: 2rem;
+}
+
+header .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+header .hero-text h1 {
+  margin-bottom: 0.5em;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+}
+header .hero-text p {
+  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  text-align: center;
+}
+header .hero-text .city-name {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.aboutme .aboutme-info {
+  margin-bottom: 2rem;
+}
+.aboutme .aboutme-info .aboutme-img {
+  height: 700px;
+  background-image: url(../img/Karol1.jpg);
+  background-size: cover;
+  background-position: 0 30%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.aboutme .aboutme-info .aboutme-text {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutme .aboutme-info .aboutme-text .subpage-link {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
+  background-color: #014029;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.aboutme .aboutme-info .aboutme-text .subpage-link:hover {
+  background-color: #02734A;
+}
+
+.aboutme-boxes {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url(../img/tło_1920.jpg);
+  background-size: cover;
+  background-position: 0 73%;
+}
+.aboutme-boxes .aboutme-box {
+  padding: 0 2rem;
+  transition: scale 0.2;
+}
+.aboutme-boxes .aboutme-box:hover {
+  transform: scale(1.1);
+}
+.aboutme-boxes .aboutme-box h4 {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.aboutme-boxes .aboutme-box p {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.cooperation .cooperation-info .cooperation-text {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cooperation .cooperation-info .cooperation-img {
+  height: auto;
+  background-image: url(../img/cooperation-1280.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.price-list .price-box .prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price-list .price-box .prices p {
+  text-align: center;
+}
+
+.reviews {
+  padding-bottom: 0;
+}
+.reviews .reviews-boxes .reviews-box {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+  transition: transform 0.3s;
+}
+.reviews .reviews-boxes .reviews-box:last-child {
+  margin-bottom: 3rem;
+}
+.reviews .reviews-boxes .reviews-box:hover {
+  transform: scale(0.95);
+}
+.reviews .reviews-boxes .reviews-box img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -10%;
+  left: 70%;
+  border-radius: 50%;
+}
+.reviews .reviews-boxes .reviews-box .reviews-info .icon {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.reviews .reviews-boxes .reviews-box .reviews-info .reviews-text {
+  margin-bottom: 1rem;
+}
+
+.contact .contact-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact-boxes .location-h3 {
+  font-size: 2.2rem;
+}
+.contact .contact-boxes .contact-info {
+  padding-right: 0.75rem;
+}
+.contact .contact-boxes .contact-info .contact-details {
+  text-align: left;
+}
+.contact .contact-boxes .contact-maps iframe {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+.contact .contact-boxes .contact-maps iframe:last-child {
+  margin-bottom: 0;
+}
+
+.education .education-info {
+  padding-bottom: 1.5rem;
+}
+.education .education-info .education-img {
+  height: 580px;
+  background-image: url(../img/Karol2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+.education .education-info .education-text {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.education .education-info .education-text p:last-child {
+  margin-bottom: 0;
+}
+
+.office {
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+.office .office-title {
+  text-align: center;
+}
+.office .office-title p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.office .carousel {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.office .carousel .office-img {
+  max-height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.office .office-img-mobile {
+  margin-bottom: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 1.5rem;
+}
+footer p {
+  margin-bottom: 0;
+  text-align: center;
+}
+footer p span {
+  font-weight: normal;
+}
+
+@media (max-width: 1400px) {
+  .hero-img {
+    height: 700px;
+    background-position: bottom;
+  }
+  section h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+  nav .navbar-brand {
+    font-size: 2.3rem;
+  }
+  nav .navbar-nav {
+    font-size: 2.1rem;
+  }
+  .subpage a {
+    font-size: 1.7em;
+  }
+  header .hero-text h1 {
+    font-size: 4rem;
+  }
+  header .hero-text p {
+    font-size: 3rem;
+  }
+  header .hero-text .city-name {
+    font-size: 2.2rem;
+  }
+  .aboutme .aboutme-info .aboutme-text .subpage-link {
+    font-size: 1.6rem;
+  }
+  .aboutme-boxes .aboutme-box h4 {
+    font-size: 1.7rem;
+  }
+  .aboutme-boxes .aboutme-box p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    scroll-padding-top: 55px;
+  }
+  nav .navbar-brand {
+    font-size: 2rem;
+  }
+  nav .navbar-nav {
+    font-size: 1.8rem;
+  }
+  .aboutme-boxes {
+    background-image: url(../img/tło_1280.jpg);
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 992px) {
+  .hero-img {
+    height: 600px;
+  }
+  .aboutme .aboutme-info .aboutme-text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.5em;
+  }
+  .aboutme-boxes .aboutme-box {
+    padding: 1rem;
+  }
+  .cooperation .cooperation-info .cooperation-text {
+    padding: 0;
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    height: 700px;
+    background-position: 0 60%;
+  }
+  .contact .contact-info {
+    padding-bottom: 2rem;
+  }
+  .contact .location-h3 {
+    font-size: 2rem;
+  }
+  .education {
+    padding-bottom: 0;
+  }
+  .education .education-info .education-img {
+    margin-bottom: 2rem;
+    height: 550px;
+  }
+  .education .education-info .education-text {
+    padding: 0;
+  }
+  .office .office-title h2 {
+    font-size: 2.5rem;
+  }
+  .office .office-title p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 778px) {
+  header .hero-text h1 {
+    font-size: 3.8rem;
+  }
+  header .hero-text p {
+    font-size: 2.7rem;
+  }
+  header .hero-text .city-name {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .aboutme-boxes .aboutme-box:not(:first-child) {
+    padding-top: 2rem;
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    background-position: 0 60%;
+  }
+  .price-list .price-box .price-info {
+    padding-top: 2rem;
+  }
+  .reviews .reviews-boxes .reviews-box img {
+    top: -5%;
+  }
+  .contact .location-h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  header .hero-text h1 {
+    font-size: 3.6rem;
+  }
+  header .hero-text p {
+    font-size: 2.4rem;
+  }
+  header .hero-text .city-name {
+    font-size: 2.1rem;
+  }
+  header .hero-img {
+    background-image: url(../img/home_640.jpg);
+  }
+  .aboutme-boxes {
+    background-image: url(../img/tło_640.jpg);
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    background-image: url(../img/cooperation-640.jpg);
+  }
+}
+@media (max-width: 576px) {
+  section h2 {
+    font-size: 2.7rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  nav .navbar-brand {
+    font-size: 1.8rem;
+  }
+  nav .navbar-nav {
+    font-size: 1.6rem;
+  }
+  .aboutme-boxes .aboutme-box h4 {
+    font-size: 1.6rem;
+  }
+  .aboutme-boxes .aboutme-box p {
+    font-size: 1.5rem;
+  }
+  .subpage a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero-img {
+    height: 500px;
+  }
+  .aboutme-info .aboutme-img {
+    height: 550px;
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    height: 500px;
+    background-position: 0 60%;
+  }
+}
+@media (max-width: 450px) {
+  header .hero-text h1 {
+    font-size: 3.4rem;
+  }
+  header .hero-text p {
+    font-size: 2.2rem;
+  }
+  header .hero-text .city-name {
+    font-size: 1.9rem;
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    height: 450px;
+    background-position: 0 60%;
+  }
+}
+@media (max-width: 400px) {
+  nav .navbar-brand {
+    font-size: 1.7rem;
+  }
+  nav .navbar-nav {
+    font-size: 1.7rem;
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    height: 400px;
+    background-position: 0 60%;
+  }
+}
+@media (max-width: 350px) {
+  section h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  nav .navbar-brand {
+    font-size: 1.6rem;
+  }
+  nav .navbar-nav {
+    font-size: 1.6rem;
+  }
+  header .hero-text h1 {
+    font-size: 3.3rem;
+  }
+  header .hero-text p {
+    font-size: 2.1rem;
+  }
+  header .hero-text .city-name {
+    font-size: 1.8rem;
+  }
+  .cooperation .cooperation-info .cooperation-img {
+    height: 350px;
+    background-position: 0 60%;
+  }
+  .contact .location-h3 {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=main.css.map */
